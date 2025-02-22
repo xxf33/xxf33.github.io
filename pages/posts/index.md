@@ -1,0 +1,4 @@
+---
+layout: posts
+sidebar: false
+---
