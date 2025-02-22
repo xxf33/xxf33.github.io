@@ -1,0 +1,38 @@
+:root {
+  --brand: 207, 96%, 48%;
+  --text-1: #0f0f0f;
+  --text-2: #606060;
+  --border: #cfd6de;
+  --bg-1: #fff;
+  --bg-2: #f6f8fa;
+  --radius: 0.5rem;
+}
+
+.dark:root {
+  --brand: 160, 84%, 39%;
+  --text-1: #f1f1f1;
+  --text-2: #aaa;
+  --border: #27272a;
+  --bg-1: #151515;
+  --bg-2: #1a1a1a;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: var(--border);
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-tap-highlight-color */
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}

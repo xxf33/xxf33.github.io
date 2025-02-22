@@ -1,0 +1,15 @@
+@import url('https://registry.npmmirror.com/lxgw-wenkai-screen-web/latest/files/style.css');
+@import url('https://registry.npmmirror.com/@chinese-fonts/xiaolai/latest/files/dist/Xiaolai/result.css');
+
+:root {
+  --font-lxgw: 'LXGW WenKai Screen';
+  --font-xiaolai: 'Xiaolai SC';
+  /* sans-serif 小赖字体 霞鹭文楷 */
+  --font-prefer: var(--font-xiaolai);
+  --vp-font-family-base: var(--font-prefer), 'Punctuation SC', ui-sans-serif,
+    system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --vp-font-family-mono: ui-monospace, 'Menlo', 'Monaco', 'Consolas',
+    'Liberation Mono', 'Courier New', var(--font-lxgw, monospace);
+  font-optical-sizing: auto;
+}

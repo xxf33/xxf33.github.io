@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev --host --port 5530",
+    "build": "npm run md2json && vitepress build",
+    "serve": "vitepress serve",
+    "md2json": "node scripts/md2json"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.26",
+    "@iconify-json/tabler": "^1.2.16",
+    "@types/node": "^22.13.5",
+    "@vueuse/core": "^12.7.0",
+    "canvas-confetti": "^1.9.3",
+    "gray-matter": "^4.0.3",
+    "ofetch": "^1.4.1",
+    "tinyglobby": "^0.2.12",
+    "unocss": "^66.0.0",
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "quoteProps": "consistent",
+    "semi": false,
+    "singleQuote": true
+  }
+}

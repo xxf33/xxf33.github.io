@@ -1,0 +1,177 @@
+/**
+ * Customize default theme styling
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+:root {
+  --vp-c-brand-1: hsl(var(--brand));
+  --vp-c-brand-2: var(--vp-c-brand-1);
+  --vp-c-brand-3: var(--vp-c-brand-1);
+  --vp-c-text-1: var(--text-1);
+  --vp-c-text-2: var(--text-2);
+  --vp-c-border: var(--border);
+  --vp-c-divider: var(--vp-c-border);
+}
+
+button {
+  border-width: 0;
+  border-style: solid;
+  border-color: var(--vp-c-border);
+}
+
+/**
+ * NavBar
+ * -------------------------------------------------------------------------- */
+.VPNavBarTitle .VPImage.logo {
+  height: 1.75rem;
+  border-radius: 50%;
+}
+
+.VPLocalNavOutlineDropdown .outline {
+  outline-style: unset;
+}
+
+/**
+ * NavBar Blur
+ * -------------------------------------------------------------------------- */
+:root {
+  --vp-sidebar-bg-color: var(--vp-c-bg);
+  --vp-nav-bg-color: transparent;
+  --vp-nav-bg-blur: #ffffffb3;
+}
+
+:root.dark {
+  --vp-nav-bg-blur: #1b1b1fb3;
+}
+
+.VPNav,
+.VPLocalNav {
+  position: relative;
+  background: var(--vp-nav-bg-blur) !important;
+}
+
+.VPNav::after,
+.VPLocalNav::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(8px);
+  z-index: -1;
+}
+
+@media screen and (min-width: 960px) {
+  .VPLocalNav {
+    display: none;
+  }
+}
+
+.VPNav .divider {
+  padding-left: 0 !important;
+}
+
+.VPNavBarTitle.has-sidebar .title {
+  border-bottom: none;
+}
+
+.VPSidebar .curtain {
+  display: none;
+}
+
+.VPSidebar .VPSidebarItem.level-0 {
+  padding-bottom: 0.5rem !important;
+}
+
+@media screen and (min-width: 960px) {
+  .VPSidebar {
+    padding-top: 1.25rem !important;
+    top: var(--vp-nav-height) !important;
+  }
+}
+
+/**
+ * Doc Content
+ * -------------------------------------------------------------------------- */
+.vp-doc h2 {
+  border-top: none;
+  border-bottom: 1px solid var(--vp-c-divider);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.vp-doc :where(h3, h4, h5) {
+  text-decoration: underline;
+  text-decoration-color: var(--vp-c-divider);
+  text-underline-offset: 4px;
+}
+
+/**
+ * Doc Aside
+ * -------------------------------------------------------------------------- */
+.VPDoc .aside-curtain,
+.VPDoc .aside-content .outline-marker {
+  display: none !important;
+}
+
+.VPDoc .aside .outline-link {
+  padding-top: 0.5rem;
+  line-height: 1.5rem;
+  text-decoration: underline dotted var(--vp-c-divider);
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.25s ease;
+}
+
+.VPDoc .aside .outline-link:hover {
+  text-decoration-style: solid;
+  text-decoration-color: var(--vp-c-text-1);
+}
+
+/**
+  * More...
+  * -------------------------------------------------------------------------- */
+th,
+td,
+tr {
+  border: inherit !important;
+}
+
+table {
+  --border-table: 1px solid var(--vp-c-divider);
+  width: fit-content;
+  border-radius: var(--radius, 0.5rem);
+  border-spacing: 0;
+  border-collapse: separate !important;
+  border: var(--border-table) !important;
+  overflow: hidden;
+}
+
+table th:not(:last-child),
+table td:not(:last-child) {
+  border-right: var(--border-table) !important;
+}
+
+table > thead > tr:not(:last-child) > th,
+table > thead > tr:not(:last-child) > td,
+table > tbody > tr:not(:last-child) > th,
+table > tbody > tr:not(:last-child) > td,
+table > tfoot > tr:not(:last-child) > th,
+table > tfoot > tr:not(:last-child) > td,
+table > tr:not(:last-child) > td,
+table > tr:not(:last-child) > th,
+table > thead:not(:last-child),
+table > tbody:not(:last-child),
+table > tfoot:not(:last-child) {
+  border-bottom: var(--border-table) !important;
+}
+
+.vp-doc iframe,
+.vp-doc img {
+  border-radius: var(--radius, 0.5rem);
+}
+
+html.dark .vp-doc img {
+  filter: brightness(0.9);
+}

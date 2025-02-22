@@ -10,7 +10,7 @@ tags:
 
 ## 试玩
 
-<DemoWrapper :loader="() => import('~/demos/minesweeper/main.vue')" />
+<DemoWrapper :loader="() => import('@/demos/minesweeper/main.vue')" />
 
 选项说明：
 
