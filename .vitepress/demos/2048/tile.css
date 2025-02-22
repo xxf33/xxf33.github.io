@@ -1,0 +1,66 @@
+.tile-2 {
+  color: #645b52;
+  background: #f7f4ef;
+}
+
+.tile-4 {
+  color: #645b52;
+  background: #ede0c8;
+}
+
+.tile-8 {
+  color: #ffffff;
+  background: #f2b179;
+}
+
+.tile-16 {
+  color: #ffffff;
+  background: #f59563;
+}
+
+.tile-32 {
+  color: #ffffff;
+  background: #f67c5f;
+}
+
+.tile-64 {
+  color: #ffffff;
+  background: #f65e3b;
+}
+
+.tile-128 {
+  color: #ffffff;
+  background: #edcf72;
+  box-shadow: 0 0 20px 0 rgba(243, 215, 116, 0.3);
+}
+
+.tile-256 {
+  color: #ffffff;
+  background: #edcc61;
+  box-shadow: 0 0 20px 0 rgba(243, 215, 116, 0.4);
+}
+
+.tile-512 {
+  color: #ffffff;
+  background: #edc850;
+  box-shadow: 0 0 20px 0 rgba(243, 215, 116, 0.5);
+}
+
+.tile-1024 {
+  color: #ffffff;
+  background: #edc53f;
+  box-shadow: 0 0 20px 0 rgba(243, 215, 116, 0.6);
+}
+
+.tile-2048 {
+  color: #ffffff;
+  background: #edc22e;
+  box-shadow: 0 0 20px 0 rgba(243, 215, 116, 0.7);
+}
+
+/* over 2048 */
+.tile-super {
+  color: #ffffff;
+  background: #1c1c1c;
+  box-shadow: 0 0 20px 0 rgba(28, 28, 28, 0.4);
+}

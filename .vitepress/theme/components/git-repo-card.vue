@@ -90,7 +90,7 @@ function formatResponse(res: Record<string, any>) {
     <div v-else-if="state === 'error'"></div>
     <div v-else-if="state === 'success'" class="relative p-4">
       <div class="-z-1 absolute right-4 top-4">
-        <i class="i-lucide-github text-2xl opacity-50" />
+        <i class="i-lucide-github text-2xl opacity-40" />
       </div>
       <div class="mb-2 flex items-center gap-2">
         <img :src="data.avatar_url" class="h-7 w-7 rounded-full" />
@@ -99,11 +99,11 @@ function formatResponse(res: Record<string, any>) {
         </a>
       </div>
       <div class="mb-4 break-words text-sm">{{ data.description }}</div>
-      <div class="flex items-center gap-x-7 gap-y-2 text-xs text-$vp-c-text-2">
+      <div class="flex flex-wrap items-center gap-x-7 gap-y-2">
         <div
           v-for="repo in repoInfo"
           :title="repo?.title"
-          class="flex items-center gap-1"
+          class="flex items-center gap-1 text-xs text-$vp-c-text-2"
         >
           <i :class="repo.icon" />{{ repo.text }}
         </div>

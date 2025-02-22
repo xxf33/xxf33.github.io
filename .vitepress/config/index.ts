@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import unocss from 'unocss/vite'
+import { sidebar } from './sidebar'
+import { injectFrontmatter } from './frontmatter'
 import { tsConfigPaths, vpComponentAlias } from './alias'
 
 export default defineConfig({
@@ -16,6 +18,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
+    sidebar,
     logo: {
       light: '/sherry.jpg',
       dark: '/bonfire.jpg',
@@ -37,5 +40,14 @@ export default defineConfig({
       alias: [...tsConfigPaths, ...vpComponentAlias],
     },
     plugins: [unocss()],
+  },
+
+  transformPageData({ frontmatter, relativePath }) {
+    return {
+      frontmatter: {
+        ...injectFrontmatter(relativePath),
+        ...frontmatter,
+      },
+    }
   },
 })
