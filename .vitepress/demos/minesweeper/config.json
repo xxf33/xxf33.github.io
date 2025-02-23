@@ -1,0 +1,29 @@
+{
+  "difficultyOptions": [
+    { "key": "easy", "text": "初级", "width": 9, "height": 9, "mines": 10 },
+    { "key": "medium", "text": "中级", "width": 16, "height": 16, "mines": 40 },
+    { "key": "hard", "text": "高级", "width": 30, "height": 16, "mines": 99 }
+  ],
+  "emojiPresets": {
+    "ready": "🙂",
+    "playing": "🤔",
+    "won": "😎",
+    "lost": "😵",
+    "timer": "⏱️",
+    "quick": "🚀",
+    "wrong": "❌",
+    "mark": "🚩",
+    "mine": "💣",
+    "boom": "💥"
+  },
+  "numberColors": {
+    "1": "#3b82f6",
+    "2": "#22c55e",
+    "3": "#ef4444",
+    "4": "#6366f1",
+    "5": "#f97316",
+    "6": "#a855f7",
+    "7": "#14b8a6",
+    "8": "#ec4899"
+  }
+}
