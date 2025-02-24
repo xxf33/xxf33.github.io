@@ -15,7 +15,7 @@ tags:
 
 ## 试玩
 
-<DemoWrapper :loader="() => import('@/demos/sliding-puzzle/main.vue')"></DemoWrapper>
+<DemoWrapper :loader="() => import('@/demos/sliding-puzzle/main.vue')" />
 
 ## 日志
 
@@ -23,7 +23,7 @@ tags:
 
 最开始我是直接用随机的方法打乱滑块位置，但是试玩后，我感觉有些局面压根无解。例如下面这两组拼图开局, 移动几次后，你也会发现存在一些无解的局面。
 
-<DemoWrapper :loader="() => import('@/demos/sliding-puzzle/non-solution.vue')" :center="false"></DemoWrapper>
+<DemoWrapper :loader="() => import('@/demos/sliding-puzzle/non-solution.vue')" />
 
 也就是说，要使这个游戏能正常进行下去，我们需要确保给玩家的开局一定是有解的。
 

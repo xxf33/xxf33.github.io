@@ -1,21 +1,25 @@
 /// <reference types="vitepress/client" />
 
-import type { Component } from 'vue'
+import { h, type Component } from 'vue'
 import type { Theme } from 'vitepress'
-import Layout from './components/layout.vue'
+import DefaultTheme from 'vitepress/theme-without-fonts'
+import DocHeader from './components/doc-header.vue'
 import './styles/main.css'
 import 'uno.css'
 
 export default {
-  Layout,
+  Layout: () =>
+    h(DefaultTheme.Layout, null, {
+      'doc-before': () => h(DocHeader),
+    }),
   enhanceApp(ctx) {
     const modules = import.meta.glob<Component>(['./components/**/*.vue'], {
       import: 'default',
       eager: true,
     })
-    Object.values(modules).forEach(item => {
-      if (item.name) {
-        ctx.app.component(item.name, item)
+    Object.values(modules).forEach(module => {
+      if (module.name) {
+        ctx.app.component(module.name, module)
       }
     })
   },

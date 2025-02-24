@@ -3,9 +3,9 @@ import { onMounted, ref, useTemplateRef, watch } from 'vue'
 import { useG2048 } from './use-2048'
 import Tile from './tile.vue'
 
-const tilesBoard = useTemplateRef('tilesBoard')
-const scorePanel = useTemplateRef('scorePanel')
-const scoreToastTpl = useTemplateRef('scoreToastTpl')
+const tilesBoard = useTemplateRef<HTMLElement>('tilesBoard')
+const scorePanel = useTemplateRef<HTMLElement>('scorePanel')
+const scoreToastTpl = useTemplateRef<HTMLElement>('scoreToastTpl')
 
 const size = ref(4)
 const { gg, best, options, canIBack, ...model } = useG2048(tilesBoard)

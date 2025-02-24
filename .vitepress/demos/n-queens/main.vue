@@ -124,7 +124,7 @@ function resetLockedLines() {
                 '--x': `calc(var(--side) * ${x})`,
                 '--y': `calc(var(--side) * ${y})`,
               }"
-              class="absolute h-$side w-$side translate-x-$x translate-y-$y shadow-md text-[calc(var(--side)*0.75)] transition-transform duration-300"
+              class="absolute h-$side w-$side translate-x-$x translate-y-$y shadow text-[calc(var(--side)*0.75)] transition-transform duration-300"
               :class="
                 x === lockedLines[0] ||
                 y === lockedLines[1] ||

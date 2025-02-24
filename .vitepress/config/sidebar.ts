@@ -43,12 +43,10 @@ function createSidebarForPosts(posts: MarkdownMetaList) {
       text: `${getZodiacEmoji(yyyy)} ${yyyy}`,
       items: items.map(({ title, link, date }) => ({
         link,
-        text: `<div style="display: flex; justify-content: space-between;">
-        ${title}<span style="font-size: 0.875em">${formatDate(
+        text: `${title} <span style="float: right;font-size: 0.875em">${formatDate(
           new Date(date),
           'M.D'
-        )}</span>
-        </div>`,
+        )}</span>`,
       })),
     }
   })

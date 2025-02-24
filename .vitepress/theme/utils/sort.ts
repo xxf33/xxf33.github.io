@@ -9,20 +9,23 @@ type SortCompareFn = (
 export function getSortedMarkdowns(source: MarkdownMetaList, key: string) {
   let groupFn: GroupMarkdownsFn
   let sortFn: SortCompareFn | undefined
-  if (key === 'timeline') {
-    groupFn = groupedByTimeline
-    sortFn = (a, b) => Number(b.label) - Number(a.label)
-  } else if (key === 'tags') {
-    groupFn = groupedByTag
-    sortFn = (a, b) => b.items.length - a.items.length
-  } else {
-    groupFn = groupedByCategory
+  switch (key) {
+    case 'timeline':
+      groupFn = groupedByTimeline
+      sortFn = (a, b) => Number(b.label) - Number(a.label)
+      break
+    case 'tags':
+      groupFn = groupedByTag
+      sortFn = (a, b) => b.items.length - a.items.length
+      break
+    case 'category':
+      groupFn = groupedByCategory
+      break
+    default:
+      groupFn = groupedByCategory
   }
   const arr = mapToArray(groupFn(source))
-  if (sortFn) {
-    arr.sort(sortFn)
-  }
-  return arr
+  return sortFn ? arr.sort(sortFn) : arr
 }
 
 function groupedByTimeline(

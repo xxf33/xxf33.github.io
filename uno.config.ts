@@ -9,11 +9,7 @@ import {
 export default defineConfig({
   content: {
     pipeline: {
-      include: [
-        '**/.vitepress/**/*.vue',
-        '**/demos/**/*.vue',
-        '**/pages/**/*.md',
-      ],
+      include: ['**/.vitepress/**/*.vue', '**/pages/**/*.md'],
     },
   },
   presets: [

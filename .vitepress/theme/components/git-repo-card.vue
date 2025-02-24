@@ -31,7 +31,7 @@ const repoInfo = computed(() => [
       },
 ])
 
-const target = useTemplateRef('target')
+const target = useTemplateRef<HTMLElement>('target')
 const { stop } = useIntersectionObserver(
   target,
   async ([{ isIntersecting }]) => {

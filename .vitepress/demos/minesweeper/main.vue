@@ -118,7 +118,7 @@ const markMode = ref(false)
 const side = ref(33 /**px */)
 const edge = ref(2 /**px */)
 
-const blockBoard = useTemplateRef('blockBoard')
+const blockBoard = useTemplateRef<HTMLElement>('blockBoard')
 const pointerPos = ref({ x: 0, y: 0 })
 const enableHighlight = ref(false)
 

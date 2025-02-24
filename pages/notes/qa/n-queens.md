@@ -22,7 +22,7 @@ tags:
 
 ## 摆法演示
 
-<DemoWrapper :loader="() => import('@/demos/n-queens/main.vue')"></DemoWrapper>
+<DemoWrapper :loader="() => import('@/demos/n-queens/main.vue')" />
 
 ## 代码示例
 
