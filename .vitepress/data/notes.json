@@ -55,7 +55,7 @@
   },
   {
     "link": "/notes/demo/sliding-puzzle",
-    "lastUpdatedTime": "2025-02-22T00:00:00.000Z",
+    "lastUpdatedTime": "2025-02-24T00:00:00.000Z",
     "date": "2023-06-26T16:00:00.000Z",
     "title": "滑动拼图",
     "category": "练习",
@@ -76,7 +76,7 @@
   },
   {
     "link": "/notes/demo/2048",
-    "lastUpdatedTime": "2025-02-22T00:00:00.000Z",
+    "lastUpdatedTime": "2025-02-24T00:00:00.000Z",
     "date": "2023-03-16T16:00:00.000Z",
     "title": "2048",
     "category": "练习",
@@ -96,7 +96,7 @@
   },
   {
     "link": "/notes/qa/n-queens",
-    "lastUpdatedTime": "2025-02-22T00:00:00.000Z",
+    "lastUpdatedTime": "2025-02-24T00:00:00.000Z",
     "date": "2023-02-25T16:00:00.000Z",
     "title": "八皇后问题",
     "category": "问答",
