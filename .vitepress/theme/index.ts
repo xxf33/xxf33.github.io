@@ -3,6 +3,7 @@
 import { h, type Component } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme-without-fonts'
+import DocBackTop from './components/doc-back-top.vue'
 import DocHeader from './components/doc-header.vue'
 import './styles/main.css'
 import 'uno.css'
@@ -10,7 +11,7 @@ import 'uno.css'
 export default {
   Layout: () =>
     h(DefaultTheme.Layout, null, {
-      'doc-before': () => h(DocHeader),
+      'doc-before': () => [h(DocBackTop), h(DocHeader)],
     }),
   enhanceApp(ctx) {
     const modules = import.meta.glob<Component>(['./components/**/*.vue'], {
