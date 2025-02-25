@@ -31,7 +31,7 @@ function doCollapsing(event: ToggleEvent, key: string) {
     <component
       :is="showTags ? 'div' : 'details'"
       v-for="({ label, items }, index) in notes"
-      :key="index"
+      :key="label"
       :open="openLabelList[label] ?? true"
       class="mb-1 open:mb-6"
       @toggle="doCollapsing($event, label)"
