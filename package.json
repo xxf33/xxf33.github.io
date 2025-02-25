@@ -19,7 +19,7 @@
     "tinyglobby": "^0.2.12",
     "unocss": "^66.0.0",
     "vitepress": "^1.6.3",
-    "vitest": "^3.0.6",
+    "vitest": "^3.0.7",
     "vue": "^3.5.13"
   },
   "prettier": {
