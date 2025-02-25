@@ -4,20 +4,21 @@
     "lastUpdatedTime": "2025-02-18T16:00:00.000Z",
     "date": "2025-02-18T16:00:00.000Z",
     "title": "美味的白萝卜丝汤",
-    "category": "干饭记"
+    "category": "干饭实录"
   },
   {
     "link": "/posts/2025/春节回家随记",
     "lastUpdatedTime": "2025-02-03T16:00:00.000Z",
     "date": "2025-02-03T16:00:00.000Z",
     "title": "春节回家随记",
-    "category": "琐事随记"
+    "category": "琐事简记"
   },
   {
     "link": "/posts/2025/y25",
-    "lastUpdatedTime": "2025-02-22T00:00:00.000Z",
+    "lastUpdatedTime": "2025-02-25T00:00:00.000Z",
     "date": "2025-01-01T16:00:00.000Z",
     "title": "书影音游回顾之 2025",
+    "description": "记录我在2025年的书影音游之旅",
     "cover": [
       "https://s1.imagehub.cc/images/2025/02/22/ac76ed195d04daa11408b1b1d7c741bb.webp",
       "https://s1.imagehub.cc/images/2025/02/22/69ecbca6630f656916cde495d4548f81.webp"
@@ -29,6 +30,7 @@
     "lastUpdatedTime": "2025-02-22T00:00:00.000Z",
     "date": "2024-12-30T16:00:00.000Z",
     "title": "书影音游回顾之 2024",
+    "description": "记录我在2024年的书影音游之旅",
     "cover": [
       "https://s1.imagehub.cc/images/2024/02/21/9ed00eab8648e9e584afc3744d12d631.webp",
       "https://s1.imagehub.cc/images/2024/03/29/31b8c4f7a074e216e4ee0348d6449305.webp",
@@ -42,7 +44,7 @@
     "lastUpdatedTime": "2024-10-19T16:00:00.000Z",
     "date": "2024-10-19T16:00:00.000Z",
     "title": "鸡蛋的 N 种简单食法",
-    "category": "干饭记"
+    "category": "干饭实录"
   },
   {
     "link": "/posts/2024/一次有明显症状的感冒",
@@ -53,13 +55,14 @@
     "cover": [
       "https://s1.imagehub.cc/images/2024/01/18/4555c109686b1820ae7e6f5a022aaad5.webp"
     ],
-    "category": "琐事随记"
+    "category": "琐事简记"
   },
   {
     "link": "/posts/2023/y23",
     "lastUpdatedTime": "2025-02-22T00:00:00.000Z",
     "date": "2023-12-30T16:00:00.000Z",
     "title": "书影音游回顾之 2023",
+    "description": "记录我在2023年的书影音游之旅",
     "cover": [
       "https://s1.imagehub.cc/images/2024/02/29/e2f3a22e0ad128dfc668fa2bb9fb1e2c.webp",
       "https://s1.imagehub.cc/images/2024/06/04/a4c629ad7660d3d3cabce8b95e47e44d.jpeg",
@@ -76,7 +79,7 @@
     "cover": [
       "https://s1.imagehub.cc/images/2023/11/04/e0eeaaa5ad7fb582c047c6110d0189a1.jpeg"
     ],
-    "category": "琐事随记"
+    "category": "琐事简记"
   },
   {
     "link": "/posts/2023/中秋夜望月",
@@ -87,7 +90,7 @@
     "cover": [
       "https://s1.imagehub.cc/images/2023/10/10/moon017feb1ed909f47d.jpeg"
     ],
-    "category": "琐事随记"
+    "category": "琐事简记"
   },
   {
     "link": "/posts/2023/重装win10系统记",
@@ -98,7 +101,7 @@
     "cover": [
       "https://s1.imagehub.cc/images/2023/12/12/e53d063e8b4d762d21073b864f510669.webp"
     ],
-    "category": "琐事随记"
+    "category": "琐事简记"
   },
   {
     "link": "/posts/2023/曾经的电视剧",
@@ -109,7 +112,7 @@
     "cover": [
       "https://s1.imagehub.cc/images/2023/11/09/dd06057daa32e48d21113fbca3b65d27.jpeg"
     ],
-    "category": "琐事随记"
+    "category": "琐事简记"
   },
   {
     "link": "/posts/2023/长跑小目标",
@@ -120,7 +123,7 @@
     "cover": [
       "https://s1.imagehub.cc/images/2023/09/24/running.jpeg"
     ],
-    "category": "琐事随记"
+    "category": "琐事简记"
   },
   {
     "link": "/posts/2023/要开始写点东西了",
@@ -131,6 +134,6 @@
     "cover": [
       "https://s1.imagehub.cc/images/2023/11/04/24c6e0a0c59300fa7333e930dc6fac19.jpeg"
     ],
-    "category": "琐事随记"
+    "category": "琐事简记"
   }
 ]
