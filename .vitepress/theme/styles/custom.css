@@ -157,6 +157,7 @@ tr {
 table {
   --border-table: 1px solid var(--vp-c-divider);
   width: fit-content;
+  max-width: 100%;
   border-radius: var(--radius, 0.5rem);
   border-spacing: 0;
   border-collapse: separate !important;

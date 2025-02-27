@@ -1,71 +1,71 @@
 {
   "vuejs/core": {
-    "timestamp": 1740367502384,
+    "timestamp": 1740630967669,
     "avatar_url": "https://avatars.githubusercontent.com/u/6128107?v=4",
     "html_url": "https://github.com/vuejs/core",
     "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
     "language": "TypeScript",
-    "stargazers_count": 48893,
-    "forks_count": 8510,
-    "pushed_at": "2025-02-24T01:37:19Z"
+    "stargazers_count": 48937,
+    "forks_count": 8515,
+    "pushed_at": "2025-02-27T03:07:50Z"
   },
   "vuejs/vitepress": {
-    "timestamp": 1740367502389,
+    "timestamp": 1740630967695,
     "avatar_url": "https://avatars.githubusercontent.com/u/6128107?v=4",
     "html_url": "https://github.com/vuejs/vitepress",
     "description": "Vite & Vue powered static site generator.",
     "language": "TypeScript",
-    "stargazers_count": 14010,
-    "forks_count": 2242,
-    "pushed_at": "2025-02-23T09:54:48Z"
+    "stargazers_count": 14057,
+    "forks_count": 2247,
+    "pushed_at": "2025-02-27T03:38:52Z"
   },
   "vueuse/vueuse": {
-    "timestamp": 1740367502389,
+    "timestamp": 1740630967696,
     "avatar_url": "https://avatars.githubusercontent.com/u/77578415?v=4",
     "html_url": "https://github.com/vueuse/vueuse",
     "description": "Collection of essential Vue Composition Utilities for Vue 2 and 3",
     "language": "TypeScript",
-    "stargazers_count": 20646,
-    "forks_count": 2620,
-    "pushed_at": "2025-02-21T11:31:55Z"
+    "stargazers_count": 20666,
+    "forks_count": 2623,
+    "pushed_at": "2025-02-26T10:00:04Z"
   },
   "unocss/unocss": {
-    "timestamp": 1740367502407,
+    "timestamp": 1740630967676,
     "avatar_url": "https://avatars.githubusercontent.com/u/93899228?v=4",
     "html_url": "https://github.com/unocss/unocss",
     "description": "The instant on-demand atomic CSS engine.",
     "language": "TypeScript",
-    "stargazers_count": 17176,
-    "forks_count": 863,
-    "pushed_at": "2025-02-21T09:38:07Z"
+    "stargazers_count": 17201,
+    "forks_count": 865,
+    "pushed_at": "2025-02-27T03:11:26Z"
   },
   "type-challenges/type-challenges": {
-    "timestamp": 1740367502425,
+    "timestamp": 1740630967680,
     "avatar_url": "https://avatars.githubusercontent.com/u/68700335?v=4",
     "html_url": "https://github.com/type-challenges/type-challenges",
     "description": "Collection of TypeScript type challenges with online judge",
     "language": "TypeScript",
-    "stargazers_count": 44468,
-    "forks_count": 4835,
+    "stargazers_count": 44502,
+    "forks_count": 4841,
     "pushed_at": "2025-02-14T04:01:10Z"
   },
   "sindresorhus/type-fest": {
-    "timestamp": 1740367502407,
+    "timestamp": 1740630967688,
     "avatar_url": "https://avatars.githubusercontent.com/u/170270?v=4",
     "html_url": "https://github.com/sindresorhus/type-fest",
     "description": "A collection of essential TypeScript types",
     "language": "TypeScript",
-    "stargazers_count": 14908,
-    "forks_count": 576,
-    "pushed_at": "2025-02-17T05:31:09Z"
+    "stargazers_count": 14934,
+    "forks_count": 577,
+    "pushed_at": "2025-02-26T15:42:31Z"
   },
   "total-typescript/ts-reset": {
-    "timestamp": 1740367502760,
+    "timestamp": 1740630968308,
     "avatar_url": "https://avatars.githubusercontent.com/u/28293365?v=4",
     "html_url": "https://github.com/mattpocock/ts-reset",
     "description": "A 'CSS reset' for TypeScript, improving types for common JavaScript API's",
     "language": "TypeScript",
-    "stargazers_count": 8009,
+    "stargazers_count": 8012,
     "forks_count": 124,
     "pushed_at": "2024-10-22T07:42:41Z"
   }

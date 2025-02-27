@@ -99,7 +99,9 @@ function doCollapsing(event: ToggleEvent, key: string) {
             <div
               :class="[
                 'text-right text-sm font-mono',
-                showTimeline ? 'order-first w-16' : 'ml-auto mr-4',
+                showTimeline
+                  ? 'order-first w-16'
+                  : 'ml-auto mr-4 opacity-70 group-hover:opacity-100',
                 showTags ? 'hidden sm:flex' : '',
               ]"
             >
