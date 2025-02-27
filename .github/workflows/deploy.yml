@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -23,18 +23,32 @@ jobs:
         with:
           fetch-depth: 0
 
-      # pnpm环境配置
+      # pnpm 环境配置
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
           version: 10
 
-      # Node环境与缓存配置
+      # Node 环境与缓存配置
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: pnpm
+
+      # 添加 pnpm 依赖缓存
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       # 安装依赖
       - name: Install dependencies
